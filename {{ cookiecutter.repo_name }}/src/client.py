@@ -1,4 +1,8 @@
+import logging
+
 from sqlalchemy import create_engine
+
+logger = logging.getLogger('client.py')
 
 
 class Client:
@@ -17,6 +21,10 @@ class Client:
 		Use the information contained in the params.py file 
 		to connect to the postgreSQL database.
 		"""
-		self.engine = create_engine(f'postgresql+psycopg2://{params.user}:{params.password}@{params.host}/{params.database}')
-		self.conn = self.engine.connect()
+                try:
+		    self.engine = create_engine(f'postgresql+psycopg2://{params.user}:{params.password}@{params.host}/{params.database}')
+		    self.conn = self.engine.connect()
+                except Exception as e:
+                    logger.warning('Verify your credentials')
+                    raise e
 
