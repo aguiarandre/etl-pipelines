@@ -4,7 +4,7 @@ logger = logging.getLogger('nodes.data_gathering')
 
 
 def update(client, params):
-	pass
+    pass
 
 def done(client, params):
-	pass
+    pass
