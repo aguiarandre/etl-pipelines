@@ -8,15 +8,12 @@ Welcome to {{ cookiecutter.project_name }}'s documentation!
 
 This is the documentation of the pipeline for {{ cookiecutter.project_name }}. 
 
-:ref:`Reference to the source code <src>`
-:ref:`Reference to the node code <src.nodes>`
-
 
 Contents 
 ========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    Source code <src>
 

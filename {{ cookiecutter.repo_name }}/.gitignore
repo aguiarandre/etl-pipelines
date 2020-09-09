@@ -1,0 +1,17 @@
+## Python stuff
+__pycache__/
+
+# environments
+env/
+venv/
+
+
+## Jupyter Notebook stuff
+
+*/.ipynb_checkpoints/*
+
+
+## Macbook stuff
+
+.DS_Store
+
