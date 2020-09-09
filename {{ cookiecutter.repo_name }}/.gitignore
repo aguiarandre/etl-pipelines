@@ -5,13 +5,12 @@ __pycache__/
 env/
 venv/
 
+# environment variables
+.env
 
 ## Jupyter Notebook stuff
-
 */.ipynb_checkpoints/*
 
-
 ## Macbook stuff
-
 .DS_Store
 
